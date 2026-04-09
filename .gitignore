@@ -1,0 +1,13 @@
+# Ignore build artifacts
+Lux-Logger/Debug/
+*.o
+*.out
+*.exe
+*.mcp.json
+
+# IDE/System files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.claude/
