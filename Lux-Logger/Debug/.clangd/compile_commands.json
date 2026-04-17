@@ -1,3 +1,142 @@
 [
-
+   {
+      "directory" : "/Users/Owner/workspace-school/eel3926/final-lab/Debug",
+      "command"   : "clang++ -I\"/Applications/ti/ccs2050/ccs/ccs_base/msp430/include\" -I\"/Users/Owner/workspace-school/eel3926/final-lab\" -I\"/Applications/ti/ccs2050/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE -xc",
+      "file"      : "/Users/Owner/workspace-school/eel3926/final-lab/GrLib/fonts/fontClean5x8.c"
+   },
+   {
+      "directory" : "/Users/Owner/workspace-school/eel3926/final-lab/Debug",
+      "command"   : "clang++ -I\"/Applications/ti/ccs2050/ccs/ccs_base/msp430/include\" -I\"/Users/Owner/workspace-school/eel3926/final-lab\" -I\"/Applications/ti/ccs2050/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE -xc",
+      "file"      : "/Users/Owner/workspace-school/eel3926/final-lab/GrLib/fonts/fontClean7x10.c"
+   },
+   {
+      "directory" : "/Users/Owner/workspace-school/eel3926/final-lab/Debug",
+      "command"   : "clang++ -I\"/Applications/ti/ccs2050/ccs/ccs_base/msp430/include\" -I\"/Users/Owner/workspace-school/eel3926/final-lab\" -I\"/Applications/ti/ccs2050/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE -xc",
+      "file"      : "/Users/Owner/workspace-school/eel3926/final-lab/GrLib/fonts/fontCourier7x13.c"
+   },
+   {
+      "directory" : "/Users/Owner/workspace-school/eel3926/final-lab/Debug",
+      "command"   : "clang++ -I\"/Applications/ti/ccs2050/ccs/ccs_base/msp430/include\" -I\"/Users/Owner/workspace-school/eel3926/final-lab\" -I\"/Applications/ti/ccs2050/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE -xc",
+      "file"      : "/Users/Owner/workspace-school/eel3926/final-lab/GrLib/fonts/fontCourier7x13b.c"
+   },
+   {
+      "directory" : "/Users/Owner/workspace-school/eel3926/final-lab/Debug",
+      "command"   : "clang++ -I\"/Applications/ti/ccs2050/ccs/ccs_base/msp430/include\" -I\"/Users/Owner/workspace-school/eel3926/final-lab\" -I\"/Applications/ti/ccs2050/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE -xc",
+      "file"      : "/Users/Owner/workspace-school/eel3926/final-lab/GrLib/fonts/fontFixed7x13.c"
+   },
+   {
+      "directory" : "/Users/Owner/workspace-school/eel3926/final-lab/Debug",
+      "command"   : "clang++ -I\"/Applications/ti/ccs2050/ccs/ccs_base/msp430/include\" -I\"/Users/Owner/workspace-school/eel3926/final-lab\" -I\"/Applications/ti/ccs2050/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE -xc",
+      "file"      : "/Users/Owner/workspace-school/eel3926/final-lab/GrLib/fonts/fontLucidabright6x12.c"
+   },
+   {
+      "directory" : "/Users/Owner/workspace-school/eel3926/final-lab/Debug",
+      "command"   : "clang++ -I\"/Applications/ti/ccs2050/ccs/ccs_base/msp430/include\" -I\"/Users/Owner/workspace-school/eel3926/final-lab\" -I\"/Applications/ti/ccs2050/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE -xc",
+      "file"      : "/Users/Owner/workspace-school/eel3926/final-lab/GrLib/fonts/fontLucidasans6x11.c"
+   },
+   {
+      "directory" : "/Users/Owner/workspace-school/eel3926/final-lab/Debug",
+      "command"   : "clang++ -I\"/Applications/ti/ccs2050/ccs/ccs_base/msp430/include\" -I\"/Users/Owner/workspace-school/eel3926/final-lab\" -I\"/Applications/ti/ccs2050/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE -xc",
+      "file"      : "/Users/Owner/workspace-school/eel3926/final-lab/GrLib/fonts/fontLucidasans8x15.c"
+   },
+   {
+      "directory" : "/Users/Owner/workspace-school/eel3926/final-lab/Debug",
+      "command"   : "clang++ -I\"/Applications/ti/ccs2050/ccs/ccs_base/msp430/include\" -I\"/Users/Owner/workspace-school/eel3926/final-lab\" -I\"/Applications/ti/ccs2050/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE -xc",
+      "file"      : "/Users/Owner/workspace-school/eel3926/final-lab/GrLib/fonts/fontcm12.c"
+   },
+   {
+      "directory" : "/Users/Owner/workspace-school/eel3926/final-lab/Debug",
+      "command"   : "clang++ -I\"/Applications/ti/ccs2050/ccs/ccs_base/msp430/include\" -I\"/Users/Owner/workspace-school/eel3926/final-lab\" -I\"/Applications/ti/ccs2050/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE -xc",
+      "file"      : "/Users/Owner/workspace-school/eel3926/final-lab/GrLib/fonts/fontcm12b.c"
+   },
+   {
+      "directory" : "/Users/Owner/workspace-school/eel3926/final-lab/Debug",
+      "command"   : "clang++ -I\"/Applications/ti/ccs2050/ccs/ccs_base/msp430/include\" -I\"/Users/Owner/workspace-school/eel3926/final-lab\" -I\"/Applications/ti/ccs2050/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE -xc",
+      "file"      : "/Users/Owner/workspace-school/eel3926/final-lab/GrLib/fonts/fontcm16.c"
+   },
+   {
+      "directory" : "/Users/Owner/workspace-school/eel3926/final-lab/Debug",
+      "command"   : "clang++ -I\"/Applications/ti/ccs2050/ccs/ccs_base/msp430/include\" -I\"/Users/Owner/workspace-school/eel3926/final-lab\" -I\"/Applications/ti/ccs2050/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE -xc",
+      "file"      : "/Users/Owner/workspace-school/eel3926/final-lab/GrLib/fonts/fontcmss12.c"
+   },
+   {
+      "directory" : "/Users/Owner/workspace-school/eel3926/final-lab/Debug",
+      "command"   : "clang++ -I\"/Applications/ti/ccs2050/ccs/ccs_base/msp430/include\" -I\"/Users/Owner/workspace-school/eel3926/final-lab\" -I\"/Applications/ti/ccs2050/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE -xc",
+      "file"      : "/Users/Owner/workspace-school/eel3926/final-lab/GrLib/fonts/fontcmtt12.c"
+   },
+   {
+      "directory" : "/Users/Owner/workspace-school/eel3926/final-lab/Debug",
+      "command"   : "clang++ -I\"/Applications/ti/ccs2050/ccs/ccs_base/msp430/include\" -I\"/Users/Owner/workspace-school/eel3926/final-lab\" -I\"/Applications/ti/ccs2050/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE -xc",
+      "file"      : "/Users/Owner/workspace-school/eel3926/final-lab/GrLib/fonts/fontfixed6x8.c"
+   },
+   {
+      "directory" : "/Users/Owner/workspace-school/eel3926/final-lab/Debug",
+      "command"   : "clang++ -I\"/Applications/ti/ccs2050/ccs/ccs_base/msp430/include\" -I\"/Users/Owner/workspace-school/eel3926/final-lab\" -I\"/Applications/ti/ccs2050/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE -xc",
+      "file"      : "/Users/Owner/workspace-school/eel3926/final-lab/GrLib/grlib/button.c"
+   },
+   {
+      "directory" : "/Users/Owner/workspace-school/eel3926/final-lab/Debug",
+      "command"   : "clang++ -I\"/Applications/ti/ccs2050/ccs/ccs_base/msp430/include\" -I\"/Users/Owner/workspace-school/eel3926/final-lab\" -I\"/Applications/ti/ccs2050/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE -xc",
+      "file"      : "/Users/Owner/workspace-school/eel3926/final-lab/GrLib/grlib/checkbox.c"
+   },
+   {
+      "directory" : "/Users/Owner/workspace-school/eel3926/final-lab/Debug",
+      "command"   : "clang++ -I\"/Applications/ti/ccs2050/ccs/ccs_base/msp430/include\" -I\"/Users/Owner/workspace-school/eel3926/final-lab\" -I\"/Applications/ti/ccs2050/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE -xc",
+      "file"      : "/Users/Owner/workspace-school/eel3926/final-lab/GrLib/grlib/circle.c"
+   },
+   {
+      "directory" : "/Users/Owner/workspace-school/eel3926/final-lab/Debug",
+      "command"   : "clang++ -I\"/Applications/ti/ccs2050/ccs/ccs_base/msp430/include\" -I\"/Users/Owner/workspace-school/eel3926/final-lab\" -I\"/Applications/ti/ccs2050/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE -xc",
+      "file"      : "/Users/Owner/workspace-school/eel3926/final-lab/GrLib/grlib/context.c"
+   },
+   {
+      "directory" : "/Users/Owner/workspace-school/eel3926/final-lab/Debug",
+      "command"   : "clang++ -I\"/Applications/ti/ccs2050/ccs/ccs_base/msp430/include\" -I\"/Users/Owner/workspace-school/eel3926/final-lab\" -I\"/Applications/ti/ccs2050/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE -xc",
+      "file"      : "/Users/Owner/workspace-school/eel3926/final-lab/GrLib/grlib/display.c"
+   },
+   {
+      "directory" : "/Users/Owner/workspace-school/eel3926/final-lab/Debug",
+      "command"   : "clang++ -I\"/Applications/ti/ccs2050/ccs/ccs_base/msp430/include\" -I\"/Users/Owner/workspace-school/eel3926/final-lab\" -I\"/Applications/ti/ccs2050/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE -xc",
+      "file"      : "/Users/Owner/workspace-school/eel3926/final-lab/GrLib/grlib/image.c"
+   },
+   {
+      "directory" : "/Users/Owner/workspace-school/eel3926/final-lab/Debug",
+      "command"   : "clang++ -I\"/Applications/ti/ccs2050/ccs/ccs_base/msp430/include\" -I\"/Users/Owner/workspace-school/eel3926/final-lab\" -I\"/Applications/ti/ccs2050/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE -xc",
+      "file"      : "/Users/Owner/workspace-school/eel3926/final-lab/GrLib/grlib/imageButton.c"
+   },
+   {
+      "directory" : "/Users/Owner/workspace-school/eel3926/final-lab/Debug",
+      "command"   : "clang++ -I\"/Applications/ti/ccs2050/ccs/ccs_base/msp430/include\" -I\"/Users/Owner/workspace-school/eel3926/final-lab\" -I\"/Applications/ti/ccs2050/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE -xc",
+      "file"      : "/Users/Owner/workspace-school/eel3926/final-lab/GrLib/grlib/line.c"
+   },
+   {
+      "directory" : "/Users/Owner/workspace-school/eel3926/final-lab/Debug",
+      "command"   : "clang++ -I\"/Applications/ti/ccs2050/ccs/ccs_base/msp430/include\" -I\"/Users/Owner/workspace-school/eel3926/final-lab\" -I\"/Applications/ti/ccs2050/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE -xc",
+      "file"      : "/Users/Owner/workspace-school/eel3926/final-lab/GrLib/grlib/radioButton.c"
+   },
+   {
+      "directory" : "/Users/Owner/workspace-school/eel3926/final-lab/Debug",
+      "command"   : "clang++ -I\"/Applications/ti/ccs2050/ccs/ccs_base/msp430/include\" -I\"/Users/Owner/workspace-school/eel3926/final-lab\" -I\"/Applications/ti/ccs2050/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE -xc",
+      "file"      : "/Users/Owner/workspace-school/eel3926/final-lab/GrLib/grlib/rectangle.c"
+   },
+   {
+      "directory" : "/Users/Owner/workspace-school/eel3926/final-lab/Debug",
+      "command"   : "clang++ -I\"/Applications/ti/ccs2050/ccs/ccs_base/msp430/include\" -I\"/Users/Owner/workspace-school/eel3926/final-lab\" -I\"/Applications/ti/ccs2050/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE -xc",
+      "file"      : "/Users/Owner/workspace-school/eel3926/final-lab/GrLib/grlib/string.c"
+   },
+   {
+      "directory" : "/Users/Owner/workspace-school/eel3926/final-lab/Debug",
+      "command"   : "clang++ -I\"/Applications/ti/ccs2050/ccs/ccs_base/msp430/include\" -I\"/Users/Owner/workspace-school/eel3926/final-lab\" -I\"/Applications/ti/ccs2050/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE -xc",
+      "file"      : "/Users/Owner/workspace-school/eel3926/final-lab/LcdDriver/lcd_driver.c"
+   },
+   {
+      "directory" : "/Users/Owner/workspace-school/eel3926/final-lab/Debug",
+      "command"   : "clang++ -I\"/Applications/ti/ccs2050/ccs/ccs_base/msp430/include\" -I\"/Users/Owner/workspace-school/eel3926/final-lab\" -I\"/Applications/ti/ccs2050/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE -xc",
+      "file"      : "/Users/Owner/workspace-school/eel3926/final-lab/LcdDriver/lower_driver.c"
+   },
+   {
+      "directory" : "/Users/Owner/workspace-school/eel3926/final-lab/Debug",
+      "command"   : "clang++ -I\"/Applications/ti/ccs2050/ccs/ccs_base/msp430/include\" -I\"/Users/Owner/workspace-school/eel3926/final-lab\" -I\"/Applications/ti/ccs2050/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE -xc",
+      "file"      : "/Users/Owner/workspace-school/eel3926/final-lab/main.c"
+   }
 ]

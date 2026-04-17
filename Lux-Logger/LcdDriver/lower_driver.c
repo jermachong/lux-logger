@@ -1,122 +1,99 @@
-// This code was ported from TI's sample code. See Copyright notice at the bottom of this file.
+// This code was ported from TI's sample code. See Copyright notice at the
+// bottom of this file.
 
-#include <LcdDriver/lower_driver.h>
-#include "msp430fr6989.h"
 #include "Grlib/grlib/grlib.h"
+#include "msp430fr6989.h"
+#include <LcdDriver/lower_driver.h>
 #include <stdint.h>
 
-void HAL_LCD_PortInit(void)
-{
-    /////////////////////////////////////
-    // Configuring the SPI pins
-    /////////////////////////////////////
 
-    // Configure UCB0CLK/P1.4 pin to serial clock
-    ...
-    // Configure UCB0SIMO/P1.6 pin to SIMO
-    ...
-    // OK to ignore UCB0STE/P1.5 since we'll connect the display's enable bit to low (enabled all the time)
-    // OK to ignore UCB0SOMI/P1.7 since the display doesn't give back any data
+void HAL_LCD_PortInit(void) {
+  /////////////////////////////////////
+  // Configuring the SPI pins
+  /////////////////////////////////////
 
-    ///////////////////////////////////////////////
-    // Configuring the display's other pins
-    ///////////////////////////////////////////////
-    // Set reset pin as output
-    ...
-    // Set the data/command pin as output
-    ...
-    // Set the chip select pin as output
-    ...
+  // Configure UCB0CLK/P1.4 pin to serial clock
+  // Configure UCB0SIMO/P1.6 pin to SIMO
+  // For MSP430FR6989: P1SEL1=0, P1SEL0=1 for these functions
+  P1SEL1 &= ~(BIT4 | BIT6);
+  P1SEL0 |= (BIT4 | BIT6);
 
-    return;
+  ///////////////////////////////////////////////
+  // Configuring the display's other pins
+  ///////////////////////////////////////////////
+
+  // Set DC (P2.3), Reset (P2.4), and CS (P2.6) as outputs
+  P2DIR |= BIT3 | BIT4 | BIT6;
+
+  return;
 }
 
-void HAL_LCD_SpiInit(void)
-{
-    //////////////////////////
-    // SPI configuration
-    //////////////////////////
+void HAL_LCD_SpiInit(void) {
+  //////////////////////////
+  // SPI configuration
+  //////////////////////////
 
-    // Put eUSCI in reset state and set all fields in the register to 0
-    UCB0CTLW0 = UCSWRST;
+  // Put eUSCI in reset state and set all fields in the register to 0
+  UCB0CTLW0 = UCSWRST;
 
-    // Fields that need to be nonzero are changed below
+  // Set clock phase to "capture on 1st edge" (UCCKPH = 1)
+  // Set MSB first (UCMSB = 1)
+  // Set MCU to SPI master (UCMST = 1)
+  // Set to 3-pin SPI (UCMODE_0)
+  // Set to synchronous mode (UCSYNC = 1)
+  // Set clock to SMCLK (UCSSEL__SMCLK)
+  UCB0CTLW0 |= UCCKPH | UCMSB | UCMST | UCSYNC | UCSSEL__SMCLK;
 
-    // Set clock phase to "capture on 1st edge, change on following edge"
-    ...
-    // Set clock polarity to "inactive low"
-    ...
-    // Set data order to "transmit MSB first"
-    ...
-    // Set data size to 8-bit
-    ...
-    // Set MCU to "SPI master"
-    ...
-    // Set SPI to "3-pin SPI" (we won't use eUSCI's chip select)
-    ...
-    // Set module to synchronous mode
-    ...
-    // Set clock to SMCLK
-    ...
+  // Configure the clock divider
+  // SMCLK is 16 MHz; Divider of 2 gives us 8 MHz SPI clock
+  UCB0BRW = 2;
 
-    // Configure the clock divider (SMCLK is set to 16 MHz; run SPI at 8 MHz using SMCLK)
-    // Maximum SPI supported frequency on the display is 10 MHz
-    UCB0BRW = ...
+  // Exit the reset state at the end of the configuration
+  UCB0CTLW0 &= ~UCSWRST;
 
-    // Exit the reset state at the end of the configuration
-    UCB0CTLW0...
+  // Initialize Control Pins
+  P2OUT &= ~BIT6; // Set CS' (chip select) bit to 0 (display always enabled)
+  P2OUT |= BIT4;  // Bring Reset high (inactive)
+  P2OUT &= ~BIT3; // Set DC' bit to 0 (assume command initially)
 
-    // Set CS' (chip select) bit to 0 (display always enabled)
-    ...
-    // Set DC' bit to 0 (assume data)
-    ...
-    //*/
-
-    return;
+  return;
 }
 
-
 //*****************************************************************************
-// Writes a command to the CFAF128128B-0145T.  This function implements the basic SPI
-// interface to the LCD display.
+// Writes a command to the CFAF128128B-0145T.  This function implements the
+// basic SPI interface to the LCD display.
 //*****************************************************************************
-void HAL_LCD_writeCommand(uint8_t command)
-{
-    // Wait as long as the module is busy
-    while (UCB0STATW & UCBUSY);
+void HAL_LCD_writeCommand(uint8_t command) {
+  // Wait as long as the module is busy
+  while (UCB0STATW & UCBUSY)
+    ;
 
-    // For command, set the DC' bit to low before transmission
-    P2OUT &= ~BIT3;
+  // For command, set the DC' bit to low before transmission
+  P2OUT &= ~BIT3;
 
-    // Transmit data
-    UCB0TXBUF = command;
+  // Transmit data
+  UCB0TXBUF = command;
 
-    return;
+  return;
 }
 
-
 //*****************************************************************************
-// Writes a data to the CFAF128128B-0145T.  This function implements the basic SPI
-// interface to the LCD display.
+// Writes a data to the CFAF128128B-0145T.  This function implements the basic
+// SPI interface to the LCD display.
 //*****************************************************************************
-void HAL_LCD_writeData(uint8_t data)
-{
-    // Wait as long as the module is busy
-    while (UCB0STATW & UCBUSY);
+void HAL_LCD_writeData(uint8_t data) {
+  // Wait as long as the module is busy
+  while (UCB0STATW & UCBUSY)
+    ;
 
-    // Set DC' bit back to high
-    P2OUT |= BIT3;
+  // Set DC' bit back to high
+  P2OUT |= BIT3;
 
-    // Transmit data
-    UCB0TXBUF = data;
+  // Transmit data
+  UCB0TXBUF = data;
 
-    return;
+  return;
 }
-
-
-
-
-
 
 /* --COPYRIGHT--,BSD
  * Copyright (c) 2015, Texas Instruments Incorporated
